@@ -4,7 +4,6 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 import * as FriendsActions from '../actions/FriendsActions';
-import { FriendList, AddFriendInput } from '../components';
 
 @connect(state => ({
   friendlist: state.friendlist
@@ -22,9 +21,7 @@ export default class FriendListApp extends Component {
 
     return (
       <div className={styles.friendListApp}>
-        <h1>The FriendList</h1>
-        <AddFriendInput addFriend={actions.addFriend} />
-        <FriendList friends={friendsById} actions={actions} />
+        <h1>test WOrld</h1>
       </div>
     );
   }
