@@ -11,11 +11,6 @@ import * as reducers from '../reducers';
 const reducer = combineReducers(reducers);
 const store = createStore(reducer);
 
-store.dispatch(addFriend('Barack Obama'));
-
-store.dispatch(deleteFriend(1));
-
-store.dispatch(starFriend(2)); 
 
 export default class App extends Component {
   render() {
